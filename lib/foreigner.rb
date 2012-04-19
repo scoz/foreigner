@@ -28,4 +28,4 @@ Foreigner::Adapter.register 'postgresql', 'foreigner/connection_adapters/postgre
 Foreigner::Adapter.register 'jdbcpostgresql', 'foreigner/connection_adapters/postgresql_adapter'
 
 require 'foreigner/loader'
-require 'foreigner/railtie' if defined?(Rails)
+require 'foreigner/railtie' if defined?(Rails::Railtie)
